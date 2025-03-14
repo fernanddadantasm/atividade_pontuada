@@ -9,9 +9,9 @@ total = quantidade_adiquirida * preço_unitario
 
 #Processamento
 if quantidade_adiquirida <= 5:
-    desconto = 0.2 * total
+    desconto = 0.02 * total
 elif quantidade_adiquirida > 10:
-    desconto = 0.5 * total
+    desconto = 0.05 * total
 else:
     quantidade_adiquirida > 5 and quantidade_adiquirida <= 10
     desconto = 0.3 * total

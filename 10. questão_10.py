@@ -22,20 +22,20 @@ preco_sem_desconto_g = litros_vendidos * preco_gasolina
 match tipo_combustivel:
     case "A":
         if litros_vendidos <= 25:
-          desconto_alcool = (preco_sem_desconto_a) * 0.2 
+          desconto_alcool = (preco_sem_desconto_a) * 0.02 
           valor_pago = preco_sem_desconto_a - desconto_alcool
           print(f"O valor total é: {valor_pago:.2f}")
         elif litros_vendidos > 25: 
-           desconto_alcool = (preco_sem_desconto_a) * 0.4
+           desconto_alcool = (preco_sem_desconto_a) * 0.04
            valor_pago = preco_sem_desconto_a - desconto_alcool 
            print(f"O valor total é: {valor_pago:.2f}")     
     case "G":
         if litros_vendidos <= 25:
-          desconto_gasolina = (preco_sem_desconto_g) * 0.3 
+          desconto_gasolina = (preco_sem_desconto_g) * 0.03 
           valor_pago = preco_sem_desconto_g - desconto_gasolina
           print(f"O valor total é: {valor_pago:.2f}")
         elif litros_vendidos > 25: 
-           desconto_gasolina = (preco_sem_desconto_g) * 0.5
+           desconto_gasolina = (preco_sem_desconto_g) * 0.05
            valor_pago = preco_sem_desconto_g - desconto_gasolina 
            print(f"O valor total é: {valor_pago:.2f}")     
             
